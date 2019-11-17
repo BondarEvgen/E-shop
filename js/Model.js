@@ -9,19 +9,7 @@
 
     const api = window.Model = {
         dispatch() {}
-    }
-
-    api.setPressElement = function setPressElement (idElement) {
-        console.log(idElement)
-        database.pressElement = idElement
-
-        console.log(database.pressElement)
-        api.dispatch()
-    }
-
-    api.getPressElement = function getPressElement () {
-        return database.pressElement
-    }
+    }  
 
     api.setData = function setData(data) {
       database.flats = getDeepCopy(data)

@@ -377,32 +377,21 @@
                 const indexOfId = strLinkOfCards.indexOf('id')
                 const onlyId = parseInt(strLinkOfCards.slice(indexOfId + 3))
 
-                Model.setPressElement(onlyId)
+                localStorage.setItem('pressCard', JSON.stringify(onlyId))
 
-                location = 'elementCard.html'
+                
+                // localStorage.setItem
+                console.log(data)
 
-                // for (const element of data) {
-                //     if(element.id === onlyId) {
+                
+                for (const element of data) {
+                    if(element.id === onlyId) {
 
-
-                //         console.log(window.document)
-
-                //         Model.setPressElement
-                        
-                //         // api.getElement()
-                      
-                //         // ElementCard.getCardNumber(element)
-                //         // window.location = 'elementCard.html'
-
-                        
-
-                        
-                //         console.log(window.document)
-                        
-                        
-                //     }
-                // }
-
+                        localStorage.setItem('element', JSON.stringify(element))      
+                    }
+                }
+                
+                window.open('elementCard.html')
                 
                 
             }))

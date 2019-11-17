@@ -21,6 +21,8 @@
             .replace(/%PRICE-POR-SQUARE%/, format( Math.ceil(data.price / data.square)) )
             .replace(/%SQUARE%/, data.square)
             .replace(/%LIKE_CLASS%/, data.like ? 'red' : '')
+            .replace(/%FLOOR%/, data.floor)
+            .replace(/%All-FLOOR%/, data.allFloor)
             
         return rootElement.firstElementChild
     }
@@ -168,7 +170,7 @@
         </div>
         <div class="card__footer">
             <div class="card__art">ГЕН-112.4.2-56</div>
-            <div class="card__floor">Этаж 4 из 12</div>
+            <div class="card__floor">Этаж %FLOOR% из %All-FLOOR%</div>
         </div>
     </div>
     <!-- // card -->`

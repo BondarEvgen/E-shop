@@ -6,7 +6,10 @@
         "like": false,
         "square" : 100,
         "floor": 3,
-        "allFloor": 4
+        "allFloor": 4,
+        "corpus": 1,
+        "section": 2,
+        "flatNumber": 122
 
     },
     {
@@ -17,7 +20,10 @@
         "like": true,
         "square" : 80,
         "floor": 6,
-        "allFloor": 10
+        "allFloor": 10,
+        "corpus": 4,
+        "section": 1,
+        "flatNumber": 54
     },
     {
         "id": 3,
@@ -27,7 +33,10 @@
         "like": false,
         "square" : 120,
         "floor": 7,
-        "allFloor": 12
+        "allFloor": 12,
+        "corpus": 2,
+        "section": 5,
+        "flatNumber": 110
     },
     {
         "id": 4,
@@ -37,7 +46,10 @@
         "like": true,
         "square" : 75,
         "floor": 2,
-        "allFloor": 4
+        "allFloor": 4,
+        "corpus": 3,
+        "section": 10,
+        "flatNumber": 32
     },
     {
         "id": 5,
@@ -47,7 +59,10 @@
         "like": false,
         "square" : 65,
         "floor": 4,
-        "allFloor": 6
+        "allFloor": 6,
+        "corpus": 3,
+        "section": 3,
+        "flatNumber": 12
     },
     {
         "id": 6,
@@ -57,7 +72,10 @@
         "like": false,
         "square" : 100,
         "floor": 6,
-        "allFloor": 16
+        "allFloor": 16,
+        "corpus": 5,
+        "section": 6,
+        "flatNumber": 55
 
     },
     {
@@ -68,7 +86,10 @@
         "like": true,
         "square" : 80,
         "floor": 10,
-        "allFloor": 12
+        "allFloor": 12,
+        "corpus": 1,
+        "section": 5,
+        "flatNumber": 87
     },
     {
         "id": 8,
@@ -78,7 +99,10 @@
         "like": false,
         "square" : 120,
         "floor": 5,
-        "allFloor": 16
+        "allFloor": 16,
+        "corpus": 1,
+        "section": 7,
+        "flatNumber": 43
     },
     {
         "id": 9,
@@ -88,7 +112,10 @@
         "like": true,
         "square" : 75,
         "floor": 5,
-        "allFloor": 10
+        "allFloor": 10,
+        "corpus": 3,
+        "section": 3,
+        "flatNumber": 167
     },
     {
         "id": 10,
@@ -98,7 +125,10 @@
         "like": false,
         "square" : 65,
         "floor": 11,
-        "allFloor": 12
+        "allFloor": 12,
+        "corpus": 4,
+        "section": 8,
+        "flatNumber": 139
     }
 
 ]

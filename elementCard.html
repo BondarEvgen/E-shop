@@ -27,8 +27,8 @@
 		</div>
 	</div>
 
-	<div class="container p-0" data-object>
-		<div class="heading-1">Квартира Студия, 45,5 м2 за 4 250 000 ₽ </div>
+	<div class="container p-0" >
+		<div class="heading-1" data-card-title>Квартира Студия, %SQUARE% м2 за %PRICE% </div>
 
 		<!-- object -->
 		<div class="object">
@@ -59,7 +59,7 @@
 			<div class="object__desc">
 
 				<div class="object__desc-name">
-					<div class="object__desc-title">Студия, 45,5 м2</div>
+					<div class="object__desc-title" data-card-square>Студия, %SQUARE% м2</div>
 					<div class="button-favourite">
 						<i class="fas fa-heart"></i> В избранное
 					</div>
@@ -70,20 +70,20 @@
 					<!-- params -->
 					<div class="params">
 						<div class="params__item">
-							<div class="params__definition">Корпус</div>
-							<div class="params__value">3</div>
+							<div class="params__definition" >Корпус</div>
+							<div class="params__value" data-card-corpus>%CORPUS%</div>
 						</div>
 						<div class="params__item">
-							<div class="params__definition">Секция</div>
-							<div class="params__value">1</div>
+							<div class="params__definition" >Секция</div>
+							<div class="params__value" data-card-section>%SECTION%</div>
 						</div>
 						<div class="params__item">
-							<div class="params__definition">Этаж</div>
-							<div class="params__value">8</div>
+							<div class="params__definition" >Этаж</div>
+							<div class="params__value" data-card-floor>%FLOOR%</div>
 						</div>
 						<div class="params__item">
 							<div class="params__definition">Номер</div>
-							<div class="params__value">121</div>
+							<div class="params__value" data-card-number>%NUMBER%</div>
 						</div>
 					</div>
 					<!-- // params -->
@@ -93,11 +93,11 @@
 				<div class="details">
 					<div class="details__row">
 						<div class="details__name">Стоимость</div>
-						<div class="details__value details__value--price">4 200 000 ₽</div>
+						<div class="details__value details__value--price" data-card-price>%PRICE%</div>
 					</div>
 					<div class="details__row">
 						<div class="details__name">Цена за м2</div>
-						<div class="details__value">64 000 ₽/м2</div>
+						<div class="details__value" data-card-price-per-square>%PRICE-PER-SQUARE% ₽/м2</div>
 					</div>
 				</div>
 
