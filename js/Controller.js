@@ -366,33 +366,49 @@
         document.querySelector('[data-show-if-filter]').style.display = isFiltred() ? '' : 'none'
 
 
-        // Обработчик клика по карточки или по списку
+         // Обработчик клика по карточки или по списку
 
         if (viewMode === 'showcase') {
 
             const cards = document.querySelectorAll('.card')
             cards.forEach(x => x.addEventListener('click', function(event) {
-            
+
+                const likeElement = this.firstElementChild.children[1].firstElementChild
+                
+                event.preventDefault()
+                
                 const strLinkOfCards = this.firstElementChild.firstElementChild.href
                 const indexOfId = strLinkOfCards.indexOf('id')
                 const onlyId = parseInt(strLinkOfCards.slice(indexOfId + 3))
 
-                localStorage.setItem('pressCard', JSON.stringify(onlyId))
 
-                
-                // localStorage.setItem
-                console.log(data)
+                // События происходящие при клике элемениу Like карточки
+                 if(event.target === likeElement) {
 
-                
-                for (const element of data) {
-                    if(element.id === onlyId) {
+                   
+                    for(const element of originalData) {
 
-                        localStorage.setItem('element', JSON.stringify(element))      
+                        if (element.id === onlyId) {
+                            element.like = !element.like
+                            Model.setData(originalData)
+                        }
+                    }             
+                                    
+                } 
+                else {
+
+                    localStorage.setItem('pressCard', JSON.stringify(onlyId))
+      
+                    for (const element of data) {
+                        if(element.id === onlyId) {
+    
+                            localStorage.setItem('element', JSON.stringify(element))      
+                        }
                     }
+                    
+                    window.open('elementCard.html')
                 }
-                
-                window.open('elementCard.html')
-                
+     
                 
             }))
             
@@ -400,63 +416,48 @@
         else {
             const panels = document.querySelectorAll('.panel')
             panels.forEach(x => x.addEventListener('click', function(event){
-                console.log(this)
+
+                const likePlateElement = this.children[9].firstElementChild.firstElementChild
+                event.preventDefault()
+
+                
+
+                const strLinkOfPlates = this.children[1].firstElementChild.href
+                const indexOfPlateId = strLinkOfPlates.indexOf('id')
+                const onliPlateId = parseInt(strLinkOfPlates.slice(indexOfPlateId + 3))
+
+               
+
+                // События происходящие при клике элемениу Like списка
+                if(event.target === likePlateElement) {
+
+                    for(const element of originalData) {
+                   
+                        if (element.id === onliPlateId) {
+                                     
+                            element.like = !element.like
+                                 
+                            Model.setData(originalData)
+                        }
+                    }
+
+                } 
+                else {
+                    
+                    for(const element of data) {
+                        if(element.id === onliPlateId) {
+                    
+                            localStorage.setItem('element', JSON.stringify(element))      
+                        }
+                    }
+                                    
+                    window.open('elementCard.html')
+
+                }
             }))
-            console.log(panels)
+            
         }
 
-
-        //Обработка события click on like in cards
-        const likeElements = document.querySelectorAll('[data-like]')
-
-        likeElements.forEach(x => x.addEventListener('click', function(event){
-            event.preventDefault()
-            const stringFromHref = this.previousElementSibling.href
-            const indexOfId = stringFromHref.indexOf('id')
-            const subStringOfHref = stringFromHref.slice(indexOfId)
-            
-            const numberOfId = parseInt(subStringOfHref.slice(3))
-           
-           
-
-            for(const element of originalData) {
-
-                if (element.id === numberOfId) {
-                    element.like = !element.like
-                    Model.setData(originalData)
-                }
-            }
-
-            
-        }))
-
-         //Обработка события click по like in list
-         const likeListElements = document.querySelectorAll('[data-like-list]')
-
-         likeListElements.forEach(x => x.addEventListener('click', function(event){
-             event.preventDefault()
-
-            const linkOfListCard = this.parentElement.parentElement.children[1].lastElementChild.href
-
-            const indexOfId = linkOfListCard.indexOf('id')
-            const subStringOfHref = linkOfListCard.slice(indexOfId)
-
-            const listCardId = parseInt(subStringOfHref.slice(3)) 
-           
-
-             console.log(listCardId)
-             for(const element of originalData) {
-                   
-                 if (element.id === listCardId) {
-                     
-                     element.like = !element.like
-                 
-                     Model.setData(originalData)
-                 }
-             }
- 
-             
-         }))
         
     }
 

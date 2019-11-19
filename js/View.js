@@ -141,8 +141,8 @@
     <div class="card">
         <div class="card__header">
             <a class="card__title" href="/flat.html?id=%ID%">%LABEL%</a>
-            <div class="card__like" data-like>
-                <i class="fas fa-heart %LIKE_CLASS%"></i>
+            <div class="card__like" >
+                <i class="fas fa-heart %LIKE_CLASS%" data-like></i>
             </div>
         </div>
         <div class="card__img">
@@ -229,8 +229,8 @@
         <div class="panel__price">%LIST-PRICE%</div>
         <div class="panel__seller">Застройщик</div>
         <div class="panel__favourite">
-            <button class="panel__favourite-btn" data-like-list>
-                <i class="fas fa-heart %LIST-LIKE_CLASS%"></i>
+            <button class="panel__favourite-btn" >
+                <i class="fas fa-heart %LIST-LIKE_CLASS%" data-like-list></i>
             </button>
         </div>
     </div>
