@@ -4,10 +4,15 @@
     const api = window.ElementCard = {}
 
 
-    const base = Model.getViewMode()
+    const base = Model.getFlats()
+
+    console.log(base)
 
     const pressCard = JSON.parse(localStorage.getItem('pressCard'))
     const sendElement = JSON.parse(localStorage.getItem('element'))
+
+    console.log(pressCard)
+    console.log(sendElement)
 
     // Настраиваем отображение формата цены
     const {format} = new Intl.NumberFormat('ru-RU', {
@@ -73,25 +78,23 @@
 
 
 
-    
-    // card.innerText = newCard
+    const likeElemen = document.querySelector('[data-card-like-element]')
 
-    // console.log(newCard)
-    
-     // .replace(/%SQUARE%/, sendElement.square)
-     // .replace(/%SQUARE%/, sendElement.square)
-    //  console.log(card)
+    if (sendElement.like) {
+        document.querySelector('[data-card-like-element] i').style.color = 'red'
+         
+        console.log(sendElement.like)
+    }
 
+    // likeElemen.addEventListener('click', function(event){
+    //     const iOfLikeElement = document.querySelector('.button-favourite i')
 
-    console.log(pressCard)
-    console.log(sendElement)
+    //     iOfLikeElement.style.color = 'red'
 
- 
-    console.log(base)
+    //     console.log(iOfLikeElement)
 
-    
- 
-
+        
+    // })
     
 
     
