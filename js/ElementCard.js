@@ -86,6 +86,12 @@
         console.log(sendElement.like)
     }
 
+
+
+    document.querySelector('[data-button-back]').addEventListener('click', function(event){
+        location = 'index.html'
+    })
+
     // likeElemen.addEventListener('click', function(event){
     //     const iOfLikeElement = document.querySelector('.button-favourite i')
 

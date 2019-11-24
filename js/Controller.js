@@ -451,7 +451,7 @@
                         }
                     }
                                     
-                    window.open('elementCard.html')
+                    location = 'elementCard.html'
 
                 }
             }))
