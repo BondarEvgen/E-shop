@@ -1,6 +1,6 @@
 [{
         "id": 1,
-        "label": "ЖК Генеральский",
+        "label": "Residential Complex Generalsky",
         "rooms": 1,
         "price": 4200000,
         "like": false,
@@ -14,7 +14,7 @@
     },
     {
         "id": 2,
-        "label": "ЖК Митино Дальнее",
+        "label": "Residential Complex Mitino Far",
         "rooms": 2,
         "price": 4300000,
         "like": true,
@@ -27,7 +27,7 @@
     },
     {
         "id": 3,
-        "label": "Москва",
+        "label": "Moscow",
         "rooms": 1,
         "price": 5000000,
         "like": false,
@@ -40,7 +40,7 @@
     },
     {
         "id": 4,
-        "label": "Киров",
+        "label": "Kirov",
         "rooms": 2,
         "price": 3150000,
         "like": true,
@@ -53,7 +53,7 @@
     },
     {
         "id": 5,
-        "label": "Киров",
+        "label": "Kirov",
         "rooms": 3,
         "price": 1100000,
         "like": false,
@@ -66,7 +66,7 @@
     },
     {
         "id": 6,
-        "label": "ЖК Генеральский",
+        "label": "Residential Complex Generalsky",
         "rooms": 1,
         "price": 4200000,
         "like": false,
@@ -80,7 +80,7 @@
     },
     {
         "id": 7,
-        "label": "ЖК Митино Дальнее",
+        "label": "Residential Complex Mitino Far",
         "rooms": 2,
         "price": 4300000,
         "like": true,
@@ -93,7 +93,7 @@
     },
     {
         "id": 8,
-        "label": "Москва",
+        "label": "Moscow",
         "rooms": 1,
         "price": 5000000,
         "like": false,
@@ -106,7 +106,7 @@
     },
     {
         "id": 9,
-        "label": "Киров",
+        "label": "Kirov",
         "rooms": 2,
         "price": 3150000,
         "like": true,
@@ -119,7 +119,7 @@
     },
     {
         "id": 10,
-        "label": "Киров",
+        "label": "Kirov",
         "rooms": 3,
         "price": 1100000,
         "like": false,

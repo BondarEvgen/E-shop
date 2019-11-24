@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Главная - магазин "Квадратный метр"</title>
+	<title>Main - shop "SQUARE METER"</title>
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
@@ -17,32 +17,32 @@
 
 	<div class="top-panel">
 		<div class="top-panel__container">
-			<div class="top-panel__title">интернет магазин недвижимости</div>
+			<div class="top-panel__title">real estate online store</div>
 			<div class="top-panel__phone"><a href="tel:+8800557755">8 (800) 55-77-55</a></div>
 		</div>
 	</div>
 
 	<div class="logo-wrapper">
 		<div class="logo">
-			<div class="logo__title">КВАДРАТНЫЙ МЕТР</div>
-			<div class="logo__subtitle">купить квартиру в один клик</div>
+			<div class="logo__title">SQUARE METER</div>
+			<div class="logo__subtitle">buy an apartment in one click</div>
 		</div>
 	</div>
 
 	<div class="container p-0">
-		<div class="heading-1">Выбор квартир:</div>
+		<div class="heading-1">The choice of apartments:</div>
 		<div class="filter">
 			<div class="filter__col">
-				<div class="filter__label">Выбор проекта:</div>
+				<div class="filter__label">Project selection:</div>
 				<select name="" id="" class="filter__dropdown" data-filter-label>
-					<option value="">Все проекты</option>
-					<option value="generalskij">ЖК Генеральский</option>
-					<option value="petrovskij">ЖК Петровский</option>
-					<option value="centralnij">ЖК Центральный</option>
+					<option value="">all projects</option>
+					<option value="generalskij">Residential Complex Generalsky</option>
+					<option value="petrovskij">Residential Complex Petrovsky</option>
+					<option value="centralnij">Residential Complex Central</option>
 				</select>
 			</div>
 			<div class="filter__col rooms">
-				<div class="filter__label">Комнат:</div>
+				<div class="filter__label">Rooms:</div>
 				<div class="rooms__wrapper" data-filter-rooms >
 					<input number = "1" type="checkbox" id="rooms_1" class="rooms__checkbox"><label for="rooms_1"
 						class="rooms__btn" number = "1">1</label>
@@ -55,30 +55,30 @@
 				</div>
 			</div>
 			<div class="filter__col">
-				<div class="filter__label">Площадь:</div>
+				<div class="filter__label">Square:</div>
 				<div class="range__wrapper">
 					<div class="range">
-						<label for="" class="range__label">от</label>
+						<label for="" class="range__label">from</label>
 						<input type="number" class="range__input" data-filter-square-min>
 						<div class="range__value">м2</div>
 					</div>
 					<div class="range">
-						<label for="" class="range__label">до</label>
+						<label for="" class="range__label">until</label>
 						<input type="number" class="range__input" data-filter-square-max>
 						<div class="range__value">м2</div>
 					</div>
 				</div>
 			</div>
 			<div class="filter__col">
-				<div class="filter__label">Стоимость:</div>
+				<div class="filter__label">Cost:</div>
 				<div class="range__wrapper">
 					<div class="range">
-						<label for="" class="range__label">от</label>
+						<label for="" class="range__label">from</label>
 						<input type="number" class="range__input range__input--price" data-filter-price-min>
 						<div class="range__value">₽</div>
 					</div>
 					<div class="range">
-						<label for="" class="range__label">до</label>
+						<label for="" class="range__label">until</label>
 						<input type="number" class="range__input range__input--price" data-filter-price-max>
 						<div class="range__value">₽</div>
 					</div>
@@ -86,8 +86,8 @@
 			</div>
 		</div>
 		<div class="filter__buttons" data-show-if-filter>
-			<button class="filter__show">Найдено <span data-filtered-number>много</span> квартир</button>
-			<button class="filter__reset" data-filter-reset>Сбросить фильтр</button>
+			<button class="filter__show">Found <span data-filtered-number>a lot of</span> apartments</button>
+			<button class="filter__reset" data-filter-reset>Reset filter</button>
 		</div>
 	</div>
  
@@ -97,13 +97,13 @@
 			<!-- view-options -->
 			<div class="view-options">
 				<div class="view-options__sort">
-					<label for="sort-cards-by" class="view-options__label">Сортировать</label>
+					<label for="sort-cards-by" class="view-options__label">Sort</label>
 					<select id="sort-cards-by" name="" id="" class="view-options__select" data-sort>
-						<option value="">Нет</option>
-						<option value="priceToUp">по цене ↑</option>
-						<option value="priceToDown">по цене ↓</option>
-						<option value="squareToUp">по площади ↑</option>
-						<option value="squareToDown">по площади ↓</option>
+						<option value="">None</option>
+						<option value="priceToUp">by price ↑</option>
+						<option value="priceToDown">by price ↓</option>
+						<option value="squareToUp">by square ↑</option>
+						<option value="squareToDown">by square ↓</option>
 					</select>
 				</div>
 				<div class="view-options__type">
@@ -129,21 +129,21 @@
 
 	<!-- pagination -->
 	<div class="pagination" data-pagination>
-		<a href="#" class="pagination__link" data-pagination-previos>Предыдущая</a>
+		<a href="#" class="pagination__link" data-pagination-previos>Previous</a>
 		<a href="#" class="pagination__page">1</a>
 		<a href="#" class="pagination__page">2</a>
 		<a href="#" class="pagination__page">3</a>
 		<a href="#" class="pagination__page">4</a>
 		<!-- <span href="#" class="pagination__dots">...</span> -->
-		<a href="#" class="pagination__link" data-pagination-next>Следующая</a>
+		<a href="#" class="pagination__link" data-pagination-next>Next</a>
 	</div>
 	<!-- // pagination -->
 
 	<div class="footer">
 		<div class="contaier">
-			<p>Учебный проект школы <a href="https://webcademy.ru/">WebCademy</a> с курса <a
-					href="https://webcademy.ru/jscourse/">JavaScript разработка</a>. Проект выполнил <a href="#">Евгений
-					Бондарь</a>.</p>
+			<p>Training project <a href="https://webcademy.ru/">WebCademy</a> from curs <a
+					href="https://webcademy.ru/jscourse/">JavaScript developer</a>. Project completed <a href="#">Evgeny
+					Bondar</a>.</p>
 		</div>
 	</div>
 

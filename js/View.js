@@ -119,7 +119,7 @@
         const selectElement = document.createElement('select')
         const optionDefaultElement = document.createElement('option')
             optionDefaultElement.setAttribute('value', '')
-            optionDefaultElement.textContent = 'Все проекты'
+            optionDefaultElement.textContent = 'All project'
             selectElement.append(optionDefaultElement)
 
         // Делаем проверку на уникальность
@@ -146,7 +146,7 @@
             </div>
         </div>
         <div class="card__img">
-            <img src="img/flat-plan.png" alt="План квартиры">
+            <img src="img/flat-plan.png" alt="Apartment plan">
         </div>
         <div class="card__desc">
             <div class="card__price">
@@ -157,11 +157,11 @@
             <!-- card__params params -->
             <div class="card__params params">
                 <div class="params__item">
-                    <div class="params__definition">Комнат</div>
+                    <div class="params__definition">Rooms</div>
                     <div class="params__value">%ROOMS%</div>
                 </div>
                 <div class="params__item">
-                    <div class="params__definition">Площадь</div>
+                    <div class="params__definition">Square</div>
                     <div class="params__value">%SQUARE%</div>
                 </div>
             </div>
@@ -170,7 +170,7 @@
         </div>
         <div class="card__footer">
             <div class="card__art">ГЕН-112.4.2-56</div>
-            <div class="card__floor">Этаж %FLOOR% из %All-FLOOR%</div>
+            <div class="card__floor">Floor %FLOOR% from %All-FLOOR%</div>
         </div>
     </div>
     <!-- // card -->`
@@ -179,25 +179,25 @@
     
     <div class="panels-filter">
         <div class="panels-filter__element" style="width: 120px;">
-            <div class="panels-filter__name">Артикул</div>
+            <div class="panels-filter__name">vendor code</div>
         </div>
         <div class="panels-filter__element" style="width: 160px;">
-            <div class="panels-filter__name">ЖК</div>
+            <div class="panels-filter__name">Residential Complex</div>
 
         </div>
         <div class="panels-filter__element" style="width: 70px;">
-            <div class="panels-filter__name">Корпус</div>
+            <div class="panels-filter__name">Part</div>
 
         </div>
         <div class="panels-filter__element" style="width: 70px;">
-            <div class="panels-filter__name">Этаж</div>
+            <div class="panels-filter__name">Floor</div>
 
         </div>
         <div class="panels-filter__element" style="width: 70px;">
-            <div class="panels-filter__name">Комнат</div>
+            <div class="panels-filter__name">Rooms</div>
         </div>
         <div class="panels-filter__element" style="width: 80px;">
-            <div class="panels-filter__name">Площадь</div>
+            <div class="panels-filter__name">Square</div>
 
         </div>
         <div class="panels-filter__element" style="width: 100px;">
@@ -205,13 +205,13 @@
 
         </div>
         <div class="panels-filter__element" style="width: 100px;">
-            <div class="panels-filter__name">Стоимость</div>
+            <div class="panels-filter__name">Cost</div>
         </div>
         <div class="panels-filter__element" style="width: 120px;">
-            <div class="panels-filter__name">Продавец</div>
+            <div class="panels-filter__name">Vendedor</div>
         </div>
         <div class="panels-filter__element" style="width: 100px;">
-            <div class="panels-filter__name">Избранное</div>
+            <div class="panels-filter__name">Favorite</div>
         </div>`
 
     const listCard = `
@@ -227,7 +227,7 @@
         <div class="panel__sq">%LIST-SQUARE% м2</div>
         <div class="panel__price-per-m">%LIST-PRICE-POR-SQUARE%</div>
         <div class="panel__price">%LIST-PRICE%</div>
-        <div class="panel__seller">Застройщик</div>
+        <div class="panel__seller">Developer</div>
         <div class="panel__favourite">
             <button class="panel__favourite-btn" >
                 <i class="fas fa-heart %LIST-LIKE_CLASS%" data-like-list></i>
